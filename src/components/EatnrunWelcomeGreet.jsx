@@ -30,24 +30,24 @@ const WelcomeGreetings = () => {
             <div className="chicken-and-ramen">
               <img
                 className="chicken"
-                src="/images/FoodImage/chicken.png"
+                src="/images/FoodImage/Chicken.png"
                 alt="Chicken"
               />
               <img
                 className="ramen"
-                src="/images/FoodImage/ramen.png"
+                src="/images/FoodImage/Ramen.png"
                 alt="Ramen"
               />
             </div>
             <div className="takoyaki-and-drinks">
               <img
                 className="takoyaki"
-                src="/images/FoodImage/takoyaki.png"
+                src="/images/FoodImage/Takoyaki.png"
                 alt="Takoyaki"
               />
               <img
                 className="drinks"
-                src="/images/FoodImage/drinks.png"
+                src="/images/FoodImage/Drinks.png"
                 alt="Drinks"
               />
             </div>
