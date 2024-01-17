@@ -1,0 +1,84 @@
+/* Calculator Application CSS */
+.calcuSite {
+  background: #3b4664;
+}
+
+.calcuSite .backToPersonalSite {
+  padding: 25px;
+}
+
+.calcuSite .backToPersonalSite a {
+  display: flex;
+  gap: 10px;
+
+  font-size: 25px;
+}
+
+.calculatorApp {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 91.8vh;
+}
+
+.calculatorApp h1 {
+  color: white;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 15px;
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  background: #181f32;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.calculatorBtns {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 20px;
+  background: #252d44;
+  border-radius: 10px;
+}
+
+.calculatorBtns .btn {
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 600;
+}
+
+.calculatorBtns .resetBtn,
+.calculatorBtns .resultBtn {
+  grid-column: span 2;
+  color: white;
+}
+
+.calculatorBtns .deleteBtn {
+  color: white;
+}
+
+.calculatorBtns .resetBtn,
+.calculatorBtns .deleteBtn {
+  background: #647299;
+}
+
+.calculatorBtns .resultBtn {
+  background: #d13f30;
+}

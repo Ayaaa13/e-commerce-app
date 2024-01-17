@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display+SC:wght@700&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 108px;
+  height: 52px;
+}
+
+.mainNavbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.mainNavbar .navbarLinks {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.mainNavbar,
+.mainNavbar input {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mainNavbar .navbarLink:hover {
+  color: #205d67;
+}
+
+.navbarLink {
+  cursor: pointer;
+}
+
+.mainNavbar .downloadCV {
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #205d67;
+  border: 1px solid #205d67;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: initial;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mainNavbar .downloadCV:hover {
+  background: #fff;
+  border: 1px solid #205d67;
+  color: #205d67;
+}
+
+.dropDownMenu .faClose,
+.faBars {
+  display: flex;
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 30px;
+
+  background: #205d67;
+  z-index: 100;
+}
+
+.dropDownMenu button {
+  justify-content: right;
+}
+
+.dropDownMenu,
+.dropDownMenu .dropDownContent,
+.dropDownMenu .navbarLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dropDownMenu .dropDownContent a {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dropDownMenu .dropDownContent input {
+  border: 1px solid #000;
+  font-size: 15px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  padding: 10px 25px;
+  width: max-content;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+section h1,
+section h2 {
+  font-family: "Playfair Display SC", serif;
+  font-style: normal;
+
+  line-height: normal;
+}
+
+section h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+section h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+section p {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.MeSection {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.MeSection .myImages {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.MeSection .myImages .me {
+  grid-row: span 2;
+}
+
+.myName {
+  width: 554px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.myName span {
+  color: #205d67;
+}
+
+.myName .buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.myName .buttons a {
+  display: flex;
+  align-items: center;
+
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 20px;
+}
+
+.myName .learnMoreBtn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  font-style: normal;
+  cursor: pointer;
+}
+
+.myName .buttons .downloadCV {
+  border: 1px solid #205d67;
+  color: #205d67;
+  background: none;
+  padding: 5px 20px;
+}
+
+.myName .buttons .downloadCV:hover {
+  border: 1px solid #205d67;
+  color: #fff;
+  background: #205d67;
+}
+
+.myName .buttons .hireMe {
+  color: white;
+  background: #205d67;
+  border: 1px solid #205d67;
+  padding: 10px 20px;
+}
+
+.myName .buttons .hireMe:hover {
+  border: 1px solid #205d67;
+  color: #205d67;
+  background: none;
+}
+
+.techStack {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+
+  padding: 25px 200px;
+}
+
+.programmingLanguage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.techStack .language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 25px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  width: 150px;
+  cursor: pointer;
+
+  transition: transform 0.3s;
+}
+
+.techStack .language:hover {
+  transform: translateY(-10px);
+}
+
+.techStack img {
+  width: 30px;
+  height: 31.895px;
+}
+
+.aboutMe {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+}
+
+.aboutMe .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 550px;
+}
+
+.aboutMe h2 {
+  color: #205d67;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 15px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.portfolio h1 {
+  color: #205d67;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.portfolioContent {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 250px;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.portfolioTop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.portfolioTop img:hover {
+  transform: scale(1.2);
+}
+
+.portfolioTop h2 {
+  display: flex;
+  flex-direction: column;
+  color: #bc6103;
+
+  font-size: 24px;
+}
+
+.portfolioBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 24px;
+}
+
+.portfolioBottom .introduce {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.portfolioBottom .introduce h2 {
+  color: #205d67;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.portfolioBottom .introduce p {
+  color: #000;
+
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.portfolioBottom .introduce span {
+  cursor: pointer;
+}
+
+.portfolioContent .buttons {
+  padding: 0px 24px 24px;
+}
+
+.projects .buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.projects .buttons .sourceCode,
+.projects .buttons .livedemo {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.projects .buttons .sourceCode {
+  border: 1px solid #205d67;
+  color: #205d67;
+  background: none;
+}
+
+.projects .buttons .sourceCode:hover {
+  color: white;
+  background: #205d67;
+}
+
+.projects .buttons .livedemo {
+  color: white;
+  background: #205d67;
+  border: none;
+}
+
+.projects .buttons .livedemo:hover {
+  border: 1px solid #205d67;
+  color: #205d67;
+  background: none;
+}
+
+.personalFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  padding: 50px 300px 25px;
+}
+
+.personalFooter .bottom-left-side h2 {
+  color: #205d67;
+  font-family: "Playfair Display SC", serif;
+}
+
+.personalFooter .bottom-left-side p,
+.personalFooter .bottom-left-side a {
+  color: grey;
+}
+
+.personalFooter .top-left-side,
+.personalFooter .bottom-left-side,
+.personalFooter .contact {
+  padding: 25px;
+}
+
+.personalFooter .top-left-side {
+  grid-column: span 2;
+}
+
+.personalFooter .top-left-side .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.personalFooter .top-left-side .logo img {
+  width: 350px;
+  height: 177.471px;
+}
+
+.personalFooter .top-left-side .logoName h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.personalFooter .top-left-side .logoName span {
+  color: #205d67;
+}
+
+.personalFooter .bottom-left-side {
+  display: flex;
+  gap: 100px;
+
+  order: 1;
+  grid-column: span 2;
+}
+
+.personalFooter .socialMediaFooter,
+.personalFooter .informationFooter,
+.personalFooter .linksFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.personalFooter .bottom-left-side i {
+  width: 18px;
+}
+
+.personalFooter .informationFooter .info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.socialMediaFooter .socmed,
+.linksFooter .link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.personalFooter .contact,
+.personalFooter form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.personalFooter .contact {
+  grid-row: span 2;
+}
+
+.personalFooter .contact h2 {
+  color: #205d67;
+  font-family: "Playfair Display SC", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.personalFooter form label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.personalFooter form input,
+.personalFooter form textarea {
+  border: 1px solid #205d67;
+  padding: 10px;
+
+  font-size: 12px;
+  width: 100%;
+}
+
+.personalFooter form input {
+  outline: none;
+}
+
+.personalFooter form textarea {
+  outline: none;
+  resize: none;
+}
+
+.personalFooter .contact form .sendBtn {
+  border: none;
+  cursor: pointer;
+
+  border-radius: 5px;
+  background: #205d67;
+  color: white;
+
+  font-size: 16px;
+}
+
+/* .messageSent {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .messageSent .fa-check {
+    background: green;
+    color: white;
+  
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .messageSent span {
+    color: green;
+    font-size: 12px;
+  } */
+
+.personalCopyright {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  padding: 25px 200px;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  background: #205d67;
+}
+
+.personalCopyright p {
+  color: #fff;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .dropDownMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .faBars {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1850px) {
+  .personalFooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personalFooter .top-left-side {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .mainNavbar a,
+  .mainNavbar input {
+    display: none;
+  }
+
+  .faBars {
+    display: flex;
+  }
+
+  .MeSection {
+    flex-direction: column;
+  }
+
+  .aboutMe {
+    flex-direction: column-reverse;
+  }
+
+  .personalFooter {
+    padding: 50px 200px 25px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .personalFooter .bottom-left-side {
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolioContent {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 100px 100px;
+  }
+
+  .Navbar {
+    padding: 25px 30px;
+  }
+
+  .personalFooter {
+    padding: 50px 150px 25px;
+  }
+
+  .personalFooter .top-left-side .logo {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .personalCopyright {
+    padding: 25px 150px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    padding: 60px 100px;
+  }
+
+  .personalFooter .left-side .logo {
+    flex-direction: column;
+  }
+
+  .personalFooter {
+    padding: 50px 100px 25px;
+  }
+
+  .personalCopyright {
+    padding: 25px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 50px 50px;
+  }
+
+  .MeSection .myImages img {
+    width: 200px;
+  }
+
+  .MeSection .myName,
+  .aboutMe .aboutMeimage img,
+  .aboutMe .left-side,
+  .eatnrunPortfolio,
+  .eatnrunPortfolio .portfolioBottom {
+    width: 400px;
+  }
+
+  .personalFooter {
+    padding: 50px 50px 25px;
+  }
+
+  .personalCopyright {
+    padding: 25px 50px;
+    font-size: 80%;
+  }
+}
