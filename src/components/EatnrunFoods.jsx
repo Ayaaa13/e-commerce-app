@@ -68,24 +68,6 @@ const FoodLists = (props) => {
     }
   };
 
-  const removeFromCart = () => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== props.id));
-  };
-
-  // const addToCart = (item) => {
-  //   if (cart.find((cartItem) => cartItem.id === item.id)) {
-  //     setCart((prevCart) =>
-  //       prevCart.map((cartItem) =>
-  //         cartItem.id === item.id
-  //           ? { ...cartItem, quantity: cartItem.quantity + 1 }
-  //           : cartItem
-  //       )
-  //     );
-  //   } else {
-  //     setCart([...cart, { ...item, quantity: 1 }]);
-  //   }
-  // };
-
   return (
     <div className="food">
       <div className="food-content">
@@ -123,15 +105,6 @@ const FoodLists = (props) => {
           </button>
         </div>
       </div>
-      {/* <div className="cart">
-        <div className="my-cart">
-          <h1>My Orders</h1>
-
-          <div className="all-orders">
-            <div className="order-summary">{CartItems}</div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
