@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import menuData from "../data/EatnrunMenuData";
 
@@ -7,67 +7,7 @@ const EatnrunTakoyakiData = menuData.EatnrunTakoyakiData;
 const EatnrunDrinksData = menuData.EatnrunDrinksData;
 const EatnrunRamenData = menuData.EatnrunRamenData;
 
-const CartItems = ({ cart, removeFromCart }) =>
-  cart && cart.length > 0 ? (
-    cart.map((item) => (
-      <div className="orders" key={item.id}>
-        <div className="order">
-          <h2 className="product-name">{item.name}</h2>
-
-          <div className="product-details">
-            <img className="product-image" src={item.img} alt={item.name} />
-            <div className="details">
-              <p className="description">{item.description}</p>
-              <span className="flavor">{item.flavor}</span>
-
-              <div className="price-remove-and-quantity">
-                <span className="price">₱{item.price * item.quantity}</span>
-
-                <div className="remove-button-and-quantity">
-                  <i
-                    className="fa-solid fa-trash-can remove-button"
-                    onClick={() => removeFromCart(item.id)}
-                  ></i>
-                  <div className="quantity">
-                    <span className="minus">-</span>
-                    <span className="number">{item.quantity}</span>
-                    <span className="add">+</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    ))
-  ) : (
-    <h1>Your Cart is Empty</h1>
-  );
-
 const FoodLists = (props) => {
-  const [cart, setCart] = useState([]);
-  // const [cartOpen, setCartOpen] = useState(false);
-
-  // const openCart = () => {
-  //   setCartOpen(!cartOpen);
-  // };
-
-  // const cartClose = () => {
-  //   setCartOpen(false);
-  // };
-
-  const addToCart = () => {
-    if (cart.find((item) => item.id === props.id)) {
-      setCart((prevCart) =>
-        prevCart.map((item) =>
-          item.id === props.id ? { ...item, quantity: item.quantity + 1 } : item
-        )
-      );
-    } else {
-      setCart((prevCart) => [...prevCart, { ...props, quantity: 1 }]);
-    }
-  };
-
   return (
     <div className="food">
       <div className="food-content">
@@ -100,9 +40,7 @@ const FoodLists = (props) => {
             </div>
           </div>
 
-          <button className="add-to-cart-button" onClick={addToCart}>
-            Add to Cart
-          </button>
+          <button className="add-to-cart-button">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -119,7 +57,6 @@ const NewFoodList = (FoodList) => {
       flavor={FoodList.flavor}
       price={FoodList.price}
       stocks={FoodList.stocks}
-      // addToCart={addToCart}
     />
   );
 };
@@ -185,7 +122,6 @@ const Foods = {
   Drinks,
   Takoyaki,
   Ramen,
-  CartItems,
 };
 
 export default Foods;

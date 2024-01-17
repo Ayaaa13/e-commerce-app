@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display+SC:wght@700&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
 body::-webkit-scrollbar {
   border: 1px solid #fff;
   width: 8px;
